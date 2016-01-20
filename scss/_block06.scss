@@ -24,10 +24,17 @@
 	}
 
 	.iphone-form-box {
-		height: 270px;
+		height: 280px;
+		color: #232323;
+		padding: 20px 22px 20px 22px;
 		background: #f9f9f9;
 		margin-bottom: 45px;
 		@include border-radius(5px);
+
+		.form-box-title {
+			font-size: 14px;
+			margin-bottom: 10px;
+		}
 	}
 
 	.iphone-price {
@@ -36,7 +43,7 @@
 		margin-bottom: 30px;
 
 		span {
-			font-size: 28px;
+			font-size: 26px;
 		}
 	}
 
@@ -52,10 +59,139 @@
 			height: 102px;
 			cursor: pointer;
 			margin-bottom: 8px;
+		}
+
+		.icr-label {
+			width: 102px;
+			height: 102px;
+			cursor: pointer;
+			display: block;
+			margin-bottom: 8px;
+			position: relative;
 			border: 1px solid #cdcdcd;
 
-			&.active {
+			.icr-text {
+				top:0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				margin: 0;
+				padding: 0;
+				position: absolute;
+				display: block;
+			}
+
+			&.checked {
 				border-color: #57a7d5;
+			}
+		}
+	}
+
+	.iphone-image {
+		float: left;
+		width: 460px;
+		height: 460px;
+		overflow: hidden;
+		margin-left: 95px;
+		background: url("../img/iphones.jpg") 0 0 no-repeat;
+	}
+
+	.divider {
+		padding-top: 20px;
+		margin-bottom: 20px;
+		border-bottom: 1px solid #e3e3e3;
+	}
+
+	// Checkbox
+
+	.icr-hidden {
+		position: absolute;
+		display: block;
+		top: 0; left: 0;
+		width: 0; height: 0;
+		overflow: hidden;
+	}
+
+	.icr-text {
+		cursor: pointer;
+		display: inline;
+		vertical-align: middle;
+	}
+
+	.iphone-color {
+		margin: 0 -7px;
+
+		li {
+			float: left;
+			width: 70px;
+			padding: 0 7px;
+			text-align: center;
+		}
+
+		.icr-label {
+
+			.color-image {
+				width: 56px;
+				height: 56px;
+				display: block;
+				margin: 0 auto 5px auto;
+				border: 3px solid transparent;
+
+				&.color-gray {
+					background: #6d6d6d;
+				}
+
+				&.color-white {
+					background: #fff;
+				}
+
+				&.color-gold {
+					background: #e4d9c5;
+				}
+			}
+
+			&.checked {
+
+				.color-image {
+					border-color: #57a7d5;
+				}
+			}
+		}
+	}
+
+
+	.iphone-memory {
+		margin: 0 -7px;
+
+		li {
+			float: left;
+			width: 70px;
+			padding: 0 7px;
+			text-align: center;
+		}
+
+		.icr-label {
+
+			.icr-text {
+				color: #fff;
+				width: 56px;
+				height: 56px;
+				display: block;
+				padding: 15px 0;
+				font-size: 14px;
+				line-height: 26px;
+				text-align: center;
+				background: #4d5259;
+				margin: 0 auto 5px auto;
+				text-transform: uppercase;
+
+			}
+
+			&.checked {
+
+				.icr-text {
+					background: #57a7d5;
+				}
 			}
 		}
 	}

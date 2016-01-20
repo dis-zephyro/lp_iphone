@@ -1,4 +1,64 @@
 .b03 {
+	color: #fff;
 	height: 850px;
+	padding-top: 60px;
 	background: url("../img/b03_bg.jpg") 50% 0 no-repeat;
+
+	.h2 {
+		color: #fff;
+		font-size: 48px;
+		line-height: 50px;
+		margin-bottom: 95px;
+	}
+
+	.list {
+
+		li {
+			margin-bottom: 20px;
+		}
+
+		.list-title {
+			font-size: 14px;
+			font-weight: 700;
+			margin-bottom: 20px;
+			margin-right: -10px;
+		}
+
+		.list-text {
+			font-size: 14px;
+		}
+	}
+
+	.left-list {
+		float: left;
+		width: 295px;
+
+		li {
+
+			&.item1 {
+				margin-bottom: 22px;
+			}
+
+			&.item2 {
+				margin-bottom: 17px;
+			}
+		}
+	}
+
+	.right-list {
+		float: right;
+		width: 280px;
+		margin-right: -10px;
+
+		li {
+
+			&.item1 {
+				margin-bottom: 50px;
+			}
+
+			&.item2 {
+				margin-bottom: 30px;
+			}
+		}
+	}
 }

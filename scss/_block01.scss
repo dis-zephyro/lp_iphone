@@ -5,8 +5,9 @@
 	z-index: 999;
 	height: 107px;
 	position: fixed;
+	min-width: 1020px;
 	padding-top: 15px;
-	background: rgba(0,0,0, 0.3);
+	background: rgba(0,0,0, 0.6);
 
 	.logo {
 		float: left;
