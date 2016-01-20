@@ -1,0 +1,36 @@
+.b05 {
+	color: #fff;
+	height: 678px;
+	padding-top: 45px;
+	padding-bottom: 45px;
+	background: url("../img/b05_bg.jpg") 50% 0 no-repeat;
+
+	.text {
+		font-size: 30px;
+		font-weight: 300;
+		text-align: center;
+
+		&.text1 {
+			margin-bottom: 25px;
+		}
+
+		&.text2 {
+			margin-bottom: 40px;
+		}
+	}
+
+	.form-block {
+		float: right;
+		position: relative;
+
+		&:before {
+			top: -10px;
+			left: -145px;
+			width: 102px;
+			height: 89px;
+			content: ' ';
+			position: absolute;
+			background: url("../img/form-arrow.png") 0 0 no-repeat;
+		}
+	}
+}

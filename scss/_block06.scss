@@ -1,0 +1,62 @@
+.b06 {
+	height: 700px;
+	padding-top: 40px;
+	background: url("../img/b06_bg.jpg") 50% 0 no-repeat;
+
+	.h2 {
+		font-size: 50px;
+		line-height: 56px;
+		margin-bottom: 50px;
+	}
+
+	.iphone-block {
+
+	}
+
+	.iphone-form {
+		width: 240px;
+		float: left;
+		margin-top: 11px;
+
+		.btn {
+			width: 100%;
+		}
+	}
+
+	.iphone-form-box {
+		height: 270px;
+		background: #f9f9f9;
+		margin-bottom: 45px;
+		@include border-radius(5px);
+	}
+
+	.iphone-price {
+		font-size: 15px;
+		line-height: 30px;
+		margin-bottom: 30px;
+
+		span {
+			font-size: 28px;
+		}
+	}
+
+	.iphone-rotate {
+		float: right;
+		width: 102px;
+		margin-top: 22px;
+		overflow: hidden;
+		position: relative;
+
+		li {
+			width: 102px;
+			height: 102px;
+			cursor: pointer;
+			margin-bottom: 8px;
+			border: 1px solid #cdcdcd;
+
+			&.active {
+				border-color: #57a7d5;
+			}
+		}
+	}
+}

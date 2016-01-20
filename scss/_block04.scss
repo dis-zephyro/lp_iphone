@@ -1,0 +1,33 @@
+.b04 {
+	padding: 60px 0;
+	background: #f0f2f6;
+
+	.h2 {
+		margin-bottom: 60px;
+	}
+
+	.kit {
+		margin: 0 -8px;
+
+		li {
+			width: 20%;
+			float: left;
+			padding: 0 8px;
+		}
+
+		.set-image {
+			width: 184px;
+			height: 183px;
+			overflow: hidden;
+			margin-bottom: 13px;
+			@include border-radius(5px);
+			@include box-shadow(1px 1px 5px 0px rgba(122, 122, 122, 0.07));
+		}
+
+		.set-text {
+			margin: 0 -5px;
+			font-size: 15px;
+			text-align: center;
+		}
+	}
+}

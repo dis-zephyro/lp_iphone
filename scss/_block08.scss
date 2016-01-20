@@ -1,0 +1,153 @@
+.b08 {
+	height: 510px;
+	padding-top: 40px;
+	background: #fff url("../img/b08_bg.jpg") 50% 100% no-repeat;
+
+	.h2 {
+		font-size: 50px;
+		line-height: 56px;
+		margin-bottom: 55px;
+	}
+
+
+	.reviews {
+		padding: 0 80px;
+		position: relative;
+
+		.reviews-item {
+			outline: none;
+			margin-bottom: 30px;
+		}
+
+		.reviews-image {
+			float: left;
+			width: 216px;
+			height: 216px;
+			overflow: hidden;
+			margin-right: 25px;
+			@include border-radius(50%);
+		}
+
+		.reviews-content {
+			float: left;
+			width: 580px;
+		}
+
+		.reviews-head {
+			margin-bottom: 20px;
+		}
+
+		.reviews-author {
+			color: #fff;
+			height: 34px;
+			font-size: 15px;
+			line-height: 20px;
+			margin-right: 24px;
+			position: relative;
+			background: #353940;
+			display: inline-block;
+			padding: 7px 12px 7px 12px;
+			@include border-radius(4px 0 0 4px);
+
+			&:before {
+				top: 0;
+				content: '';
+				right: -20px;
+				width: 20px;
+				height: 34px;
+				position: absolute;
+				background: url("../img/reviews-name.png") 0 0 no-repeat;
+			}
+		}
+
+		.reviews-city {
+			color: #1b1b1b;
+			padding: 0 7px;
+			font-size: 15px;
+			line-height: 20px;
+			display: inline-block;
+		}
+
+		.review-text {
+			font-size: 14px;
+			line-height: 23px;
+			margin-bottom: 15px;
+		}
+
+		.btn-vk {
+			font-size: 13px;
+			font-weight: 400;
+			padding: 8px 45px 8px 12px;
+
+			&:before {
+				top: 10px;
+				right: 8px;
+				width: 31px;
+				height: 21px;
+				content: ' ';
+				position: absolute;
+				background: url("../img/icon-vk.png") 0 0 no-repeat;
+			}
+		}
+	}
+
+	.reviews-nav {
+		top: 50%;
+		width: 55px;
+		height: 55px;
+		z-index: 999;
+		content: ' ';
+		cursor: pointer;
+		margin-top: -55px;
+		position: absolute;
+		background: url("../img/reviews-arrow.png") no-repeat;
+
+		&.prev {
+			left: 0;
+			background-position: 0 0;
+
+			&:hover {
+				background-position: 0 -55px;
+			}
+		}
+
+		&.next {
+			right: 0;
+			background-position: -55px 0;
+
+			&:hover {
+				background-position: -55px -55px;
+			}
+		}
+	}
+
+	.slick-dots {
+		font-size: 0;
+		line-height: 0;
+		text-align: center;
+
+		li {
+			width: 10px;
+			height: 10px;
+			margin: 0 6px;
+			overflow: hidden;
+			display: inline-block;
+			@include border-radius(50%);
+
+			button {
+				width: 10px;
+				height: 10px;
+				border: none;
+				outline: none;
+				background: #3e4249;
+			}
+
+			&.slick-active {
+
+				button {
+					background: #57a7d5;
+				}
+			}
+		}
+	}
+}

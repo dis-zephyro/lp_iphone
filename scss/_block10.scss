@@ -1,0 +1,38 @@
+.b10 {
+	height: 634px;
+	background: url("../img/b10_bg.jpg") 50% 0 no-repeat;
+
+	.h2 {
+		font-size: 50px;
+		line-height: 54px;
+		margin-bottom: 15px;
+	}
+
+	.shipping {
+		padding-left: 78px;
+		background: url("../img/shipping-bg.png") 0 0 no-repeat;
+
+		li {
+			font-size: 15px;
+			margin-bottom: 30px;
+		}
+
+		.shipping-title {
+			font-size: 26px;
+			font-weight: 300;
+			line-height: 30px;
+			margin-bottom: 10px;
+		}
+
+		p {
+			margin-bottom: 10px;
+		}
+
+		.gray-box {
+
+			span {
+				background: #eae9e9;
+			}
+		}
+	}
+}
