@@ -246,6 +246,32 @@ ul {
   text-align: center;
   margin-bottom: 50px; }
 
+.done {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: table; }
+  .done body {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: table-cell;
+    position: relative;
+    background: #f3f0e9;
+    vertical-align: middle; }
+  .done .done__head {
+    font-size: 60px;
+    margin-bottom: 5px;
+    text-transform: uppercase; }
+  .done .done__title {
+    font-size: 45px;
+    margin-bottom: 20px; }
+  .done .done__text {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 40px; }
+
 .btn {
   margin: 0;
   color: #fff;
@@ -709,16 +735,28 @@ ul {
         position: absolute; }
       .b02 .advantage li.item1:before {
         background: url("../img/b02_item1.png") 0 0; }
+      .b02 .advantage li.item1:hover:before {
+        background-position: 0 -112px; }
       .b02 .advantage li.item2:before {
-        background: url("../img/b02_item2.png") 0 -112px; }
+        background: url("../img/b02_item2.png") 0 0; }
+      .b02 .advantage li.item2:hover:before {
+        background-position: 0 -112px; }
       .b02 .advantage li.item3:before {
         background: url("../img/b02_item3.png") 0 0; }
+      .b02 .advantage li.item3:hover:before {
+        background-position: 0 -112px; }
       .b02 .advantage li.item4:before {
         background: url("../img/b02_item4.png") 0 0; }
+      .b02 .advantage li.item4:hover:before {
+        background-position: 0 -112px; }
       .b02 .advantage li.item5:before {
         background: url("../img/b02_item5.png") 0 0; }
+      .b02 .advantage li.item5:hover:before {
+        background-position: 0 -112px; }
       .b02 .advantage li.item6:before {
         background: url("../img/b02_item6.png") 0 0; }
+      .b02 .advantage li.item6:hover:before {
+        background-position: 0 -112px; }
 
 .b03 {
   color: #fff;

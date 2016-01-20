@@ -110,7 +110,7 @@ $('.iphone-choice-form input[type="radio"]').change(function(e) {
                 case 'white':
                     iphoto.css('background-position','-460px -920px');
                     break;
-                case 3:
+                case 'gold':
                     iphoto.css('background-position','-920px -920px');
                     break;
             }
@@ -171,11 +171,11 @@ $(document).ready(function() {
             $.ajax({
                 type: "POST",
                 url: "form-handler.php",
-                data: {name: name, phone: phone, email:email, type:type, color:color, memory:v, message:message}
+                data: {name: name, phone: phone, email:email, type:type, color:color, memory:memory, message:message}
             }).done(function(msg) {
                 $('form').find('input[type=text], textarea').val('');
                 console.log('удачно');
-                document.location.href = "http://rosich134.ru/done.html";
+                document.location.href = "http://zephyrus.ru/project/2016/lp_iphone/done.html";
             });
         }
     });
