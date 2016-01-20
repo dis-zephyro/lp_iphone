@@ -278,36 +278,32 @@
                                     </li>
                                 </ul>
                             </div>
-                        <div class="iphone-price">Стоимость: <span><span class="price-value">25 490</span> руб.</span></div>
-                        <button type="submit" class="btn btn-send">Оформить заказ</button>
+                        <div class="iphone-price">Стоимость: <span><span class="price-value">25490</span> руб.</span></div>
+                        <button type="submit" class="btn btn-order">Оформить заказ</button>
                     </div>
 
                         <div class="iphone-image"></div>
 
                         <ul class="iphone-rotate">
-                            <li>
+                            <li class="item1">
                                 <label class="color-label">
                                     <input type="radio" name="rotate" class="radio-color" value="1" checked>
-                                    <img class="img-responsive" src="img/iphone-rotate1.jpg" alt="">
                                 </label>
 
                             </li>
-                            <li>
+                            <li class="item2">
                                 <label class="color-label">
                                     <input type="radio" name="rotate" class="radio-color" value="2">
-                                    <img class="img-responsive" src="img/iphone-rotate2.jpg" alt="">
                                 </label>
                             </li>
-                            <li>
+                            <li class="item3">
                                 <label class="color-label">
                                     <input type="radio" name="rotate" class="radio-color" value="3">
-                                    <img class="img-responsive" src="img/iphone-rotate3.jpg" alt="">
                                 </label>
                             </li>
-                            <li>
+                            <li class="item4">
                                 <label class="color-label">
                                     <input type="radio" name="rotate" class="radio-color" value="4">
-                                    <img class="img-responsive" src="img/iphone-rotate4.jpg" alt="">
                                 </label>
                             </li>
                         </ul>
@@ -342,7 +338,7 @@
                 <div class="reviews">
                     <div class="reviews-item clearfix">
                     <div class="reviews-image">
-                        <img class="img-responsive" src="img/reviews-photo1.png" alt="">
+                        <img class="img-responsive" src="img/reviews-photo2.jpg" alt="">
                     </div>
                     <div class="reviews-content">
                         <div class="reviews-head">
@@ -356,7 +352,7 @@
 
                     <div class="reviews-item clearfix">
                         <div class="reviews-image">
-                            <img class="img-responsive" src="img/reviews-photo1.png" alt="">
+                            <img class="img-responsive" src="img/reviews-photo3.jpg" alt="">
                         </div>
                         <div class="reviews-content">
                             <div class="reviews-head">
@@ -370,7 +366,7 @@
 
                     <div class="reviews-item clearfix">
                         <div class="reviews-image">
-                            <img class="img-responsive" src="img/reviews-photo1.png" alt="">
+                            <img class="img-responsive" src="img/reviews-photo4.jpg" alt="">
                         </div>
                         <div class="reviews-content">
                             <div class="reviews-head">
@@ -511,6 +507,37 @@
                     </ul>
                     <form class="form" name="form" method="POST" action="javascript:void(0);">
                         <input type="hidden" name="type" value="Заявка">
+                        <div class="form-group valid name none required">
+                            <input type="text" class="form-control form-name" name="name" placeholder="Введите Ваше имя">
+                        </div>
+                        <div class="form-group valid phone none required">
+                            <input type="text" name="phone" class="form-control form-phone"  placeholder="Введите Ваш телефон">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-send">Оформить заказ</button>
+                        </div>
+                    </form>
+                    <div class="text-center">
+                        <div class="sup">Мы гарантируем вам 100% конфиденциальность</div>
+                        <span class="secret">Ваши данные не будут переданы 3 лицам</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- заказ -->
+        <div class="hide">
+            <div class="form-block form-modal form-order" id="order">
+                <div class="form-block-inner">
+                    <div class="form-title">Заполните заявку в форме для оформления заказа на выбранную Вами  модель:</div>
+                    <ul class="order-list">
+                        <li>Звонок нашего специалиста в течении 7 минут</li>
+                        <li>Наш специалист уточнит адрес доставки выбранной Вами модели</li>
+                    </ul>
+                    <form class="form" name="form" method="POST" action="javascript:void(0);">
+                        <input type="hidden" name="type" value="Заявка">
+                        <input type="hidden" name="colors" value="">
+                        <input type="hidden" name="mem" value="">
                         <div class="form-group valid name none required">
                             <input type="text" class="form-control form-name" name="name" placeholder="Введите Ваше имя">
                         </div>

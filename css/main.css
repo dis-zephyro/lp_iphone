@@ -890,6 +890,14 @@ ul {
       height: 102px;
       cursor: pointer;
       margin-bottom: 8px; }
+      .b06 .iphone-rotate li.item1 .icr-label {
+        background: url("../img/iphone-rotate1.jpg") 0 0; }
+      .b06 .iphone-rotate li.item2 .icr-label {
+        background: url("../img/iphone-rotate2.jpg") 0 0; }
+      .b06 .iphone-rotate li.item3 .icr-label {
+        background: url("../img/iphone-rotate3.jpg") 0 0; }
+      .b06 .iphone-rotate li.item4 .icr-label {
+        background: url("../img/iphone-rotate4.jpg") 0 0; }
     .b06 .iphone-rotate .icr-label {
       width: 102px;
       height: 102px;

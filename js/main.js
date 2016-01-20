@@ -63,25 +63,42 @@ function init(){
 
 $('.iphone-choice-form input[type="radio"]').change(function(e) {
 
+
     var irotate = parseInt($('input:radio[name=rotate]:checked').val());
     var icolor = $('input:radio[name=color]:checked').val();
     var iphoto = $('.iphone-image');
     var iprice = ($('input:radio[name=memory]:checked').val());
+    var thumb = $('.iphone-rotate label');
     var ivalue;
+    var result;
 
-    console.log(irotate);
-    console.log(icolor);
-    console.log(iprice);
+    var extra = 2000;
+
 
     switch (iprice) {
         case '16Gb':
-            ivalue = '24 990';
+            ivalue = 24990;
             break;
         case '32Gb':
-            ivalue = '27 990';
+            ivalue = 27990;
             break;
         case '64Gb':
-            ivalue = '29 990';
+            ivalue = 29990;
+            break;
+    }
+
+    switch (icolor) {
+        case 'gray':
+            thumb.css('background-position','0 0');
+            result = ivalue;
+            break;
+        case 'white':
+            thumb.css('background-position','-100px 0');
+            result = ivalue;
+            break;
+        case 'gold':
+            thumb.css('background-position','-200px 0');
+            result = ivalue + extra;
             break;
     }
 
@@ -147,9 +164,10 @@ $('.iphone-choice-form input[type="radio"]').change(function(e) {
     }
 
     console.log(ivalue);
-    $(".price-value").text(ivalue);
+    $(".price-value").text(result);
 });
 
+var icolor = $('input:radio[name=memory]:checked').val();
 
 $(document).ready(function() {
 
@@ -164,8 +182,8 @@ $(document).ready(function() {
                 name    =     $('input[name="name"]', $form).val(),
                 phone   =     $('input[name="phone"]', $form).val(),
                 email   =     $('input[name="email"]', $form).val(),
-                color   =     $('input[name="color"]', $form).val(),
-                memory  =     $('input[name="memory"]', $form).val(),
+                color   =     $('input[name="colors"]', $form).val(),
+                memory  =     $('input[name="mem"]', $form).val(),
                 message =     $('textarea[name="message"]', $form).val();
             console.log(name, phone, email, type, color, memory, message);
             $.ajax({
@@ -180,4 +198,24 @@ $(document).ready(function() {
         }
     });
 
+
+    $('.btn-order').click(function() {
+
+        var $form = $(this).closest('form'),
+            color   =     $('input:radio[name=color]:checked', $form).val(),
+            memory  =     $('input:radio[name=memory]:checked', $form).val();
+
+
+        $('#order input[name="colors"]').val(color);
+        $('#order input[name="mem"]').val(memory);
+
+
+        var color2   =     $('#order input[name="colors"]').val(),
+            memory2  =     $('#order input[name="mem"]').val();
+
+        console.log(color2, memory2);
+        $.fancybox.open('#order');
+    });
+
 });
+

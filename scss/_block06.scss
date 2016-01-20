@@ -59,6 +59,34 @@
 			height: 102px;
 			cursor: pointer;
 			margin-bottom: 8px;
+
+			&.item1 {
+
+				.icr-label {
+					background: url("../img/iphone-rotate1.jpg") 0 0;
+				}
+			}
+
+			&.item2 {
+
+				.icr-label {
+					background: url("../img/iphone-rotate2.jpg") 0 0;
+				}
+			}
+
+			&.item3 {
+
+				.icr-label {
+					background: url("../img/iphone-rotate3.jpg") 0 0;
+				}
+			}
+
+			&.item4 {
+
+				.icr-label {
+					background: url("../img/iphone-rotate4.jpg") 0 0;
+				}
+			}
 		}
 
 		.icr-label {
