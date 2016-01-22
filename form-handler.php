@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail = new PHPMailer();
     $mail->From = 'rfmobile'; // от кого
     $mail->FromName = 'rfmobile'; // от кого
-    $mail->AddAddress('zephyro@yandex.ru', ''); // кому - адрес, Имя
+    $mail->AddAddress('RFmobile34@yandex.ru', ''); // кому - адрес, Имя
 
     $mail->IsHTML(true); // выставляем формат письма HTML
     $mail->Subject = $thm; // тема письма

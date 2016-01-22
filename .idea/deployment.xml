@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="pl_iphone" autoUploadExternalChanges="true">
+  <component name="PublishConfigData" serverName="rfmobile_zephyro" autoUploadExternalChanges="true">
     <serverData>
       <paths name="109.120.162.1">
         <serverdata>
@@ -143,6 +143,13 @@
         </serverdata>
       </paths>
       <paths name="footy">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="gallery">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
@@ -381,6 +388,5 @@
         </serverdata>
       </paths>
     </serverData>
-    <option name="myAutoUpload" value="ALWAYS" />
   </component>
 </project>

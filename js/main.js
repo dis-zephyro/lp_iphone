@@ -11,7 +11,7 @@ $('.reviews').slick({
 
 $('.topnav li a').click(function(){
     var str=$(this).attr('href');
-    $.scrollTo(str, 500, {offset:-120 });
+    $.scrollTo(str, 500, {offset:-140 });
     return false;
 });
 
@@ -193,7 +193,7 @@ $(document).ready(function() {
             }).done(function(msg) {
                 $('form').find('input[type=text], textarea').val('');
                 console.log('удачно');
-                document.location.href = "http://zephyrus.ru/project/2016/lp_iphone/done.html";
+                document.location.href = "http://rfmobile.ru/done.html";
             });
         }
     });
